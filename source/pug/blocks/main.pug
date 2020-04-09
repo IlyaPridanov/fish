@@ -1,28 +1,66 @@
-section.main
-    .container.main__row
-        .main__column
-            h1.main__caption Туи из питомника с доставкой и&nbsp;скидкой 50-70%
-            a(href="#").main__link.button Оставить заявку
-            ul.main__list
-                li.main__item
-                    svg(width="30" height="30")
-                        use(xlink:href="#icon-main-plus")
-                    |Без посредников
-                li.main__item
-                    svg(width="30" height="30")
-                        use(xlink:href="#icon-main-plus")
-                    |Посадка туи за 1 день
-                li.main__item
-                    svg(width="30" height="30")
-                        use(xlink:href="#icon-main-plus")
-                    |Без предоплаты
-        .main__form.main-form
-            form(action="#" method="POST")
-                p.main-form__caption Задайте вопрос специалисту
-                label
-                    span.visually-hidden Введите имя
-                    input(type="text" name="name" placeholder="Ваше имя").main-form__input
-                label
-                    span.visually-hidden Введите телефон
-                    input(type="text" name="tel" placeholder="Ваш телефон").main-form__input.js-tel-input
-                button(type="submit").main-form__btn.button Перезвоните мне
+.container
+    section.main
+        h1.visually-hidden Рыбалка
+        .main__row
+            include catalog-list.pug
+            .main__column
+                .main__slider.slider
+                    .swiper-container
+                        .swiper-wrapper
+                            .main__slider-item.swiper-slide
+                                p.main__slider-caption Специальные предложения
+                                p.main__slider-text катушка Adrenalin 7300 BC
+                                strong.main__slider-cash 5 600 р.
+                                a.main__slider-link(href="#") Купить
+                                picture
+                                    source(srcset="img/main-coil.webp" type="image/webp")
+                                    img(src="img/main-coil.png", alt="Фото катушка")
+                            .main__slider-item.swiper-slide
+                                p.main__slider-caption Специальные предложения
+                                p.main__slider-text катушка Adrenalin 7300 BC
+                                strong.main__slider-cash 5 600 р.
+                                a.main__slider-link(href="#") Купить
+                                picture
+                                    source(srcset="img/main-coil.webp" type="image/webp")
+                                    img(src="img/main-coil.png", alt="Фото катушка")
+                            .main__slider-item.swiper-slide
+                                p.main__slider-caption Специальные предложения
+                                p.main__slider-text катушка Adrenalin 7300 BC
+                                strong.main__slider-cash 5 600 р.
+                                a.main__slider-link(href="#") Купить
+                                picture
+                                    source(srcset="img/main-coil.webp" type="image/webp")
+                                    img(src="img/main-coil.png", alt="Фото катушка")
+                    .swiper-pagination
+                ul.main__list
+                    li.main__item
+                        a.main__link(href="#")
+                            p.main__caption новые приманки
+                            p.main__text для подледной ловли
+                            span.arrow-btn
+                                svg(width="7" height="11")
+                                    use(xlink:href="#icon-arrow-point")
+                            picture
+                                source(srcset="img/main-fish.webp" type="image/webp")
+                                img(src="img/main-fish.png", alt="Фото приманки")
+                    li.main__item
+                        a.main__link(href="#")
+                            p.main__caption новые приманки
+                            p.main__text для подледной ловли
+                            span.arrow-btn
+                                svg(width="7" height="11")
+                                    use(xlink:href="#icon-arrow-point")
+                            picture
+                                source(srcset="img/main-book.webp" type="image/webp")
+                                img(src="img/main-book.png", alt="Фото книги")
+                    li.main__item
+                        a.main__link(href="#")
+                            p.main__caption новые приманки
+                            p.main__text для подледной ловли
+                            span.arrow-btn
+                                svg(width="7" height="11")
+                                    use(xlink:href="#icon-arrow-point")
+                            picture
+                                source(srcset="img/main-man.webp" type="image/webp")
+                                img(src="img/main-man.png", alt="Фото человека")
+

@@ -1,0 +1,63 @@
+.container
+    section.hit-new.slider
+        .hit-new__caption-row
+            h2.hit-new__caption.h2 Хиты продаж
+            a.hit-new__caption-link.caption-link(href="#") весь каталог
+            .hit-new__btn-block
+                button.arrow-btn.js-btn-next(type="button")
+                    svg(width="7" height="11")
+                        use(xlink:href="#icon-arrow-point")
+                button.arrow-btn.js-btn-prev(type="button")
+                    svg(width="7" height="11")
+                        use(xlink:href="#icon-arrow-point")
+        .swiper-container
+            .swiper-wrapper
+                .hit-new__item.attention-card.swiper-slide
+                    p.attention-card__caption Бестселлер
+                    p.attention-card__text катушка Adrenalin 7300 BC
+                    picture
+                        source(srcset="img/hit-coil.webp" type="image/webp")
+                        img(src="img/hit-coil.png", alt="Фото хит катушки")
+                    strong.attention-card__cash 4 800 р.
+                .hit-new__item.card.swiper-slide
+                    .card__img
+                        picture
+                            source(srcset="img/hit-rod.webp" type="image/webp")
+                            img(src="img/hit-rod.png", alt="Фото хит удочки")
+                    .card__row
+                        picture
+                            source(srcset="img/5-star.webp" type="image/webp")
+                            img(src="img/5-star.png", alt="Рейтинг")
+                        svg(width="24" height="21")
+                            use(xlink:href="#icon-heart")
+                    p.card__text Удилище<br>Matze Koch Rollen
+                    strong.card__cash 13 490 р.
+                    button.card__btn.gradient-block(type="button") в корзину
+                    span.card__hit-flag.gradient-block хит
+                .hit-new__item.card.swiper-slide
+                    .card__img
+                        picture
+                            source(srcset="img/hit-fish.webp" type="image/webp")
+                            img(src="img/hit-fish.png", alt="Фото хит приманки")
+                    .card__row
+                        picture
+                            source(srcset="img/4-star.webp" type="image/webp")
+                            img(src="img/4-star.png", alt="Рейтинг")
+                    p.card__text Приманка<br> Matze Koch Rollen
+                    strong.card__cash 3 240 р.
+                    button.card__btn.gradient-block(type="button") в корзину
+                    span.card__sale-flag скидка
+                    span.card__hit-flag.gradient-block хит
+                .hit-new__item.card.swiper-slide
+                    .card__img
+                        picture
+                            source(srcset="img/hit-coil-min.webp" type="image/webp")
+                            img(src="img/hit-coil-min.png", alt="Фото хит катушки")
+                    .card__row
+                        picture
+                            source(srcset="img/5-star.webp" type="image/webp")
+                            img(src="img/5-star.png", alt="Рейтинг")
+                    p.card__text Катушка<br> Matze Koch Rollen
+                    strong.card__cash 5 600 р.
+                    button.card__btn.gradient-block(type="button") в корзину
+                    span.card__hit-flag.gradient-block хит

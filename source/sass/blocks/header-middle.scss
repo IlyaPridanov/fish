@@ -1,0 +1,56 @@
+.header-middle__row {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+}
+
+.header-middle__logo {
+    display: block;
+
+    font-family: $panton;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 1;
+    color: $primary-color-dark;
+
+    &:focus,
+    &:hover,
+    &:active {
+        cursor: pointer;
+
+        opacity: 0.8;
+
+        transition: $transition;
+    }
+}
+
+.header-middle__input {
+    font-family: $panton;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.79;
+    color: $black;
+}
+
+.header-middle__list {
+    @include list();
+
+    display: flex;
+}
+
+.header-middle__link {
+    @include hover();
+    position: relative;
+
+    & span {
+        position: absolute;
+        right: -5px;
+        top: -5px;
+
+        font-family: $panton;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.56;
+        color: $primary-color;
+    }
+}

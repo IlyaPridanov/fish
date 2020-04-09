@@ -1,6 +1,6 @@
 @mixin hover() {
-    &:hover,
     &:focus,
+    &:hover,
     &:active {
         cursor: pointer;
 

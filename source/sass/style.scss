@@ -8,15 +8,17 @@
 @import "mixin.scss";
 
 // Blocks
-@import "blocks/container.scss";
-@import "blocks/hamburger.scss";
-@import "blocks/button.scss";
-
-@import "blocks/header.scss";
-@import "blocks/nav.scss";
-@import "blocks/main.scss";
-@import "blocks/main-form.scss";
-@import "blocks/h2.scss";
-@import "blocks/gallery.scss";
-@import "blocks/gallery-popup.scss";
-@import "blocks/catalog.scss";
+@import 'blocks/container';
+@import 'blocks/gradient-block';
+@import 'blocks/header';
+@import 'blocks/header-top';
+@import 'blocks/header-middle';
+@import 'blocks/header-bottom';
+@import 'blocks/catalog-list';
+@import 'blocks/arrow-btn';
+@import 'blocks/main';
+@import 'blocks/h2';
+@import 'blocks/caption-link';
+@import 'blocks/hit-new';
+@import 'blocks/attention-card';
+@import 'blocks/card';

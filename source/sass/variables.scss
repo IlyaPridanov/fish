@@ -1,35 +1,30 @@
-$poppins: "Poppins", "Arial", sans-serif;
-$roboto: "Roboto", "Arial", sans-serif;
+$panton: "Panton", "Arial", sans-serif;
 
 $black: #000000;
+$black-light: #1d1e1e;
 $white: #ffffff;
 
-$black-dark-opacity:rgba(0, 0, 0, 0.7);
-$black-ultra-light-opacity:rgba(0, 0, 0, 0.3);
-$black-opacity:rgba(255, 251, 251, 0.3);
-$black-middle-opacity: rgba(72, 73, 77, 0.5);
-$black-light-opacity:rgba(0, 0, 0, 0.2);
 
-$primary-color: #FEF7DD;
-$primary-color-middle: #ECECEC;
-$secondary-color: #73B055;
-$secondary-color-dark: #19300E;
-$secondary-color-middle: #273D1D;
+$primary-color: #009ee2;
+$primary-color-middle: #4cd2fe;
+$primary-color-light: #4bd1fe;
+$primary-color-dark: #0086c0;
+$primary-gradient-button: linear-gradient(to right , #33b9e9 , #088ec7);
+$primary-gradient-main: linear-gradient(to top left, #48c4f0, #0086c0);
+$primary-gradient-card: radial-gradient(circle farthest-corner at 80% 50% , rgba(255,255,255,0.6), #0086c0);
 
-$blue: #3F919C;
-$green-opacity: rgba(70, 123, 44, 0.4);
+$secondary-color: #efefef;
+$secondary-color-middle: #b5b5b5;
+$secondary-color-dark: #6a6a6a;
+
+$accent-color: #00963f;
+
+$main-shadow: 0px 22px 38px -23px rgba(0,0,0,0.56);
 
 $transition: all 0.2s ease-in;
 
-$mobile-width: 768px - 1px;
-$tablet-width: 900px;
-$min-desktop: 1050px;
-$min2-desktop: 1200px;
+$desktop: 1170px;
 
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 
-$hamburger-size: 30px;
-
-// $primary-color: #FF7931;
-// $secondary-color: #F9F9FC;

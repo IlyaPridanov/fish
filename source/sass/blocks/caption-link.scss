@@ -1,0 +1,18 @@
+.caption-link {
+    font-family: $panton;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 1;
+    color: $primary-color;
+    text-decoration: underline;
+    text-transform: uppercase;
+
+    &:focus,
+    &:hover,
+    &:active {
+        cursor: pointer;
+
+        text-decoration: none;
+        opacity: 0.8;
+    }
+}

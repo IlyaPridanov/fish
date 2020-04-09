@@ -1,0 +1,53 @@
+.attention-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 30px;
+    min-height: 455px;
+    width: 263px;
+
+    background-color: $primary-color-dark;
+    background-image: $primary-gradient-card;
+    border-radius: 3px;
+
+    & img {
+        position: absolute;
+
+        top: 128px;
+        right: 20px;
+    }
+}
+
+.attention-card__caption {
+    margin: 0;
+    margin-bottom: 27px;
+
+    font-family: $panton;
+    font-weight: 800;
+    font-size: 33px;
+    line-height: 1;
+    color: $white;
+    text-transform: uppercase;
+}
+
+.attention-card__text {
+    margin: 0;
+    margin-bottom: auto;
+
+    font-family: $panton;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.37;
+    color: $primary-color-middle;
+}
+
+.attention-card__cash {
+    margin: 0;
+
+    font-family: $panton;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.2;
+    color: $white;
+}
