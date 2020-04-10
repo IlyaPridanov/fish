@@ -1,22 +1,22 @@
 .header-middle
     .container.header-middle__row
-        a.header-middle__logo(href="index.html") LOGOtype
-        form.header-middle__input(action="#" method="GET")
-            input(type="text" name="search" id="search" placeholder="Что Вы ищете?")
+        a.header-middle__logo.logo(href="index.html") LOGOtype
+        form.header-middle__form(action="#" method="GET")
+            input.header-middle__input(type="text" name="search" id="search" placeholder="Что Вы ищете?")
             svg(width="19" height="19")
                 use(xlink:href="#icon-search")
         ul.header-middle__list
             li.header-middle__item
-                a.header-middle__link(href="#" aria-label="Личный кабинет")
+                a.header-middle__link(href="#" aria-label="Личный кабинет" tabindex="0")
                     svg(width="26" height="26")
                         use(xlink:href="#icon-refer")
             li.header-middle__item
-                a.header-middle__link(href="#" aria-label="Понравилось")
-                    svg(width="19" height="19")
+                a.header-middle__link(href="#" aria-label="Понравилось" tabindex="0")
+                    svg(width="29" height="29")
                         use(xlink:href="#icon-heart")
                     span 3
             li.header-middle__item
-                a.header-middle__link(href="#" aria-label="Корзина")
+                a.header-middle__link(href="#" aria-label="Корзина" tabindex="0")
                     svg(width="28" height="26")
                         use(xlink:href="#icon-cart")
                     span 2

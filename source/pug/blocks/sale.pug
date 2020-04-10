@@ -1,0 +1,24 @@
+.container
+    section.sale
+       h2.visually-hidden Скидки
+       .sale__row
+            .sale__card
+                p.sale__text
+                    |Скидка <span>до 15 декабря</span> на все лески
+                p.sale__cash -30%
+                picture
+                    source(srcset="img/sale-coil.webp" type="image/webp")
+                    img(src="img/sale-coil.png", alt="Фото скидки катушка")
+                span.arrow-btn
+                    svg(width="9" height="15")
+                        use(xlink:href="#icon-arrow-point")
+            .sale__card
+                p.sale__text
+                    |Скидка <span>до 15 декабря</span> на катушки
+                p.sale__cash -10%
+                picture
+                    source(srcset="img/sale-coil-2.webp" type="image/webp")
+                    img(src="img/sale-coil-2.png", alt="Фото скидки катушка")
+                span.arrow-btn
+                    svg(width="9" height="15")
+                        use(xlink:href="#icon-arrow-point")

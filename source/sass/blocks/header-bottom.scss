@@ -16,29 +16,55 @@
 }
 
 .header-bottom__button {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 17px;
     font-weight: 600;
     font-size: 18px;
 
-    & span {
-        display: block;
-        margin: 3px 0;
-        width: 25px;
-        height: 2px;
-
-        background-color: $white;
-    }
-
     & svg {
+        margin-right: 5px;
         stroke: $white;
-        transform: rotate(90deg);
+        transform: rotate(-90deg);
         opacity: 0.6;
+        
+        transition: $transition;
     }
+
+    &:focus,
+    &:hover,
+    &:active {
+        cursor: pointer;
+
+        opacity: 0.8;
+    }
+
+    &.js-btn-active {
+        & svg {
+            transform: rotate(90deg);
+            transition: $transition;
+        }
+    }
+}
+
+.header-bottom__bread {
+    margin-right: 5px;
+}
+
+.header-bottom__bread-item {
+    display: block;
+    margin: 6px 0;
+    width: 25px;
+    height: 2px;
+
+    background-color: $white;
 }
 
 .header-bottom__link {
     display: flex;
     align-items: center;
     min-height: 60px;
+    padding: 0 9px;
 
     font-family: $panton;
     font-weight: 700;

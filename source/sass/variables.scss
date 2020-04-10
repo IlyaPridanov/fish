@@ -7,19 +7,28 @@ $white: #ffffff;
 
 $primary-color: #009ee2;
 $primary-color-middle: #4cd2fe;
+$primary-color-ultra-middle: #5dd5fe;
 $primary-color-light: #4bd1fe;
 $primary-color-dark: #0086c0;
+$primary-color-dark-light: #0295d5;
 $primary-gradient-button: linear-gradient(to right , #33b9e9 , #088ec7);
 $primary-gradient-main: linear-gradient(to top left, #48c4f0, #0086c0);
 $primary-gradient-card: radial-gradient(circle farthest-corner at 80% 50% , rgba(255,255,255,0.6), #0086c0);
 
 $secondary-color: #efefef;
+$secondary-color-light: #dddddd;
 $secondary-color-middle: #b5b5b5;
 $secondary-color-dark: #6a6a6a;
+$secondary-color-ultra-dark: #6d6d6d;
+$secondary-color-black-dark: #343535;
+$primary-gradient-news: linear-gradient(to bottom,  #ffffff 41%, #efefef 41%);
 
 $accent-color: #00963f;
 
 $main-shadow: 0px 22px 38px -23px rgba(0,0,0,0.56);
+$hit-shadow: 0px 7px 14px -2px rgba(0,0,0,0.39);
+$hit-focus-shadow: 0px 7px 20px -2px rgba(0,0,0,0.39);
+$sale-shadow: 0 56px 32px -43px rgba(0,0,0,0.39);
 
 $transition: all 0.2s ease-in;
 

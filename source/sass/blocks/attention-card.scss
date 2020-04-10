@@ -3,37 +3,54 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 25px 30px;
-    min-height: 455px;
+    padding: 22px 30px;
+    min-height: 449px;
     width: 263px;
 
     background-color: $primary-color-dark;
     background-image: $primary-gradient-card;
     border-radius: 3px;
 
+    box-shadow: $hit-shadow;
+
     & img {
         position: absolute;
+        z-index: 5;
 
-        top: 128px;
-        right: 20px;
+        top: 120px;
+        right: 5px;
+    }
+
+    &--img-top {
+        & img {
+            top: 0px;
+            right: 16px;
+        }
+    }
+
+    &:focus,
+    &:hover,
+    &:active {
+        box-shadow: $hit-focus-shadow;
     }
 }
 
 .attention-card__caption {
     margin: 0;
-    margin-bottom: 27px;
+    margin-bottom: 11px;
 
     font-family: $panton;
     font-weight: 800;
     font-size: 33px;
     line-height: 1;
     color: $white;
-    text-transform: uppercase;
+    letter-spacing: 0.7px;
 }
 
 .attention-card__text {
     margin: 0;
     margin-bottom: auto;
+    width: 135px;
 
     font-family: $panton;
     font-weight: 600;
@@ -47,7 +64,21 @@
 
     font-family: $panton;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 30px;
     line-height: 1.2;
     color: $white;
+}
+
+.attention-card__sale {
+    position: absolute;
+    left: 14px;
+    bottom: 131px;
+
+    font-family: $panton;
+    font-weight: 800;
+    font-size: 95px;
+    line-height: 1;
+    color: $white;
+
+    opacity: 0.3;
 }

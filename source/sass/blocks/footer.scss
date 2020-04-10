@@ -1,0 +1,146 @@
+.footer {
+    padding-top: 60px;
+
+    background-color: $black-light;
+}
+
+.footer__row {
+    display: grid;
+    grid-template-columns: auto repeat(4 , 165px);
+    grid-gap: 30px;
+}
+
+.footer__column {
+    &:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.footer__logo {
+    margin-bottom: 4px;
+
+    color: $secondary-color-ultra-dark;
+}
+
+.footer__text {
+    margin: 0;
+    margin-bottom: auto;
+    width: 210px;
+
+    font-family: $panton;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.87;
+    color: $secondary-color-ultra-dark;
+    letter-spacing: 1.4px;
+}
+
+.footer__link {
+    margin: 10px 0;
+
+    font-family: $panton;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    color: $primary-color;
+    text-decoration: underline;
+
+    &:focus,
+    &:hover,
+    &:active {
+        cursor: pointer;
+
+        text-decoration: none;
+        opacity: 0.8;
+    }
+}
+
+.footer__caption {
+    margin: 0;
+    margin-top: 3px;
+    margin-bottom: 19px;
+
+    font-family: $panton;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+}
+
+.footer__list {
+    @include list();
+
+    & li {
+        margin-bottom: 8px;
+    }
+}
+
+.footer__list-link {
+    @include hover();
+
+    font-family: $panton;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1;
+    color: $secondary-color-ultra-dark;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.1px;
+}
+
+.footer__bottom {
+    margin-top: 54px;
+    padding: 46px 0 43px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 1px solid $secondary-color-black-dark;
+}
+
+.footer__copy {
+    margin: 0;
+
+    font-family: $panton;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1;
+    color: $secondary-color-ultra-dark;
+    letter-spacing: 0.8px;
+}
+
+.footer__social-list {
+    @include list();
+
+    display: flex;
+}
+
+.footer__social-item {
+    margin-left: 50px;
+    margin-right: 3px;
+
+    &:nth-child(2) svg {
+        transform: scale(2.1);
+    }
+}
+
+.footer__social-link {
+    & svg {
+        transform: scale(1.7);
+        fill: $secondary-color-ultra-dark;
+        stroke: $secondary-color-ultra-dark;
+    }
+
+    &:focus,
+    &:hover,
+    &:active {
+        & svg {
+            fill: $primary-color;
+            stroke: $primary-color;
+        }
+    }
+}

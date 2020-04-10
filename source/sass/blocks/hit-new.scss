@@ -1,18 +1,34 @@
+.hit-new {
+    margin-bottom: 46px;
+    padding-bottom: 80px;
+
+    border-bottom: 1px solid $secondary-color;
+
+    & .swiper-container {
+        padding: 20px 0;
+    }
+}
+
 .hit-new__caption {
     margin: 0;
 }
 
 .hit-new__caption-row {
-    margin-bottom: 50px;
+    margin-bottom: 24px;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
 }
 
 .hit-new__caption-link {
-    margin: 0 auto 0 22px;
+    margin: 12px auto 0 33px;
+    letter-spacing: 2.2px;
 }
 
 .hit-new__btn-block {
     display: flex;
+
+    & button {
+        margin-left: 6px;
+    }
 }

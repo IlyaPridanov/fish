@@ -12,29 +12,28 @@
                         use(xlink:href="#icon-arrow-point")
         .swiper-container
             .swiper-wrapper
-                .hit-new__item.attention-card.swiper-slide
+                .hit-new__item.attention-card.attention-card--img-top.swiper-slide
                     p.attention-card__caption Акция
                     p.attention-card__text удилище Adrenalin 7300 BC
                     picture
                         source(srcset="img/new-rod.webp" type="image/webp")
                         img(src="img/new-rod.png", alt="Фото новинки удилище")
                     strong.attention-card__cash 4 800 р.
+                    span.attention-card__sale -30%
                 .hit-new__item.card.swiper-slide
                     .card__img
                         picture
-                        source(srcset="img/new-coil.webp" type="image/webp")
-                        img(src="img/new-coil.png", alt="Фото новинки катушка")
+                            source(srcset="img/new-coil.webp" type="image/webp")
+                            img(src="img/new-coil.png", alt="Фото новинки катушка")
                     .card__row
                         picture
                             source(srcset="img/5-star.webp" type="image/webp")
                             img(src="img/5-star.png", alt="Рейтинг")
-                        svg(width="24" height="21")
-                            use(xlink:href="#icon-heart")
                     p.card__text Катушка<br>Matze Koch Rollen
                     strong.card__cash 13 490 р.
                     button.card__btn.gradient-block(type="button") в корзину
                 .hit-new__item.card.swiper-slide
-                    .card__img
+                    .card__img.card__img--top
                         picture
                             source(srcset="img/new-rod-1.webp" type="image/webp")
                             img(src="img/new-rod-1.png", alt="Фото новинки подсачек")
@@ -47,7 +46,7 @@
                     button.card__btn.gradient-block(type="button") в корзину
                     span.card__sale-flag скидка
                 .hit-new__item.card.swiper-slide
-                    .card__img
+                    .card__img.card__img--scale
                         picture
                             source(srcset="img/new-bag.webp" type="image/webp")
                             img(src="img/new-bag.png", alt="Фото новинки cумка рыболовная ")

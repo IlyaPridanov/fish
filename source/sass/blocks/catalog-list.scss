@@ -1,5 +1,24 @@
 .catalog-list {
     @include list();
+    position: absolute;
+    z-index: 20;
+    top:30px;
+    left: 0;
+
+    $transition: $transition;
+    transform-origin: 0 0;
+    transform: scaleX(0);
+    opacity: 0;
+
+    box-shadow: $main-shadow;
+
+    &.js-active {
+        transform: scaleX(1);
+        left: 0;
+        opacity: 1;
+        transform-origin: 0 0;
+        transition: $transition;
+    }
 }
 
 .catalog-list__item {
@@ -17,6 +36,7 @@
     font-size: 15px;
     line-height: 1;
     color: $black-light;
+    letter-spacing: 1px;
 
     background-color: $secondary-color;
     
@@ -27,8 +47,8 @@
         position: absolute;
         width:9px;
         height: 9px;
-        left: 20px;
-        top: 50%;
+        left: 24px;
+        top: 52%;
         transform: translateY(-50%);
 
         border: 2px solid $black;
@@ -36,12 +56,20 @@
     }
 
     & svg {
+        position: absolute;
+        right: 15px;
+        top: 52%;
+        transform: translateY(-50%) scale(0.75);
         stroke: $secondary-color-middle;
     }
 
     &:focus,
     &:hover,
     &:active {
+        cursor: pointer;
+
+        text-decoration: underline;
+        
         & .catalog-list__item-list {
             display: block;
         }
@@ -52,7 +80,7 @@
     @include list();
     display: none;
     position: absolute;
-    z-index: 5;
+    z-index: 20;
     left: 100%;
     top: 0;
 
@@ -76,6 +104,14 @@
         color: $black-light;
 
         background-color: $secondary-color;
+
+        &:focus,
+        &:hover,
+        &:active {
+            cursor: pointer;
+
+            text-decoration: underline;
+        }
 
     }
 }

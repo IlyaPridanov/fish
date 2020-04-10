@@ -1,11 +1,12 @@
 .header-top {
-    padding: 12px 0;
+    padding: 9px 0;
     background-color: $black-light;
 }
 
 .header-top__row {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
 }
 
 .header-top__list {
@@ -17,18 +18,18 @@
 
 .header-top__item {
     position: relative;
-    margin-right: 66px;
+    margin-right: 70px;
 
     &::after {
         content: "";
 
         position: absolute;
-        right: -30px;
-        top: 50%;
+        right: -42px;
+        top: 47%;
         transform: translateY(-50%);
         display: block;
-        width: 10px;
-        height: 10px;
+        width: 9px;
+        height: 9px;
 
         border: 2px solid $secondary-color-dark;
         border-radius: 50%;
@@ -62,11 +63,12 @@
 .header-top__tel {
     @include hover();
 
-    margin-left: 30px;
+    margin-left: 35px;
 
     font-family: $panton;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.25;
+    letter-spacing: 0.8px;
     color: $primary-color;
 }

@@ -7,3 +7,4 @@
 
 // Modules
 //= modules/getSlider.js
+//= modules/getCatalogList.js

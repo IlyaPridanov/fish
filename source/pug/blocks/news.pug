@@ -1,0 +1,58 @@
+section.news.slider
+    .container
+        .news__caption-row
+            h2.news__caption.h2 последние новости
+            a.news__caption-link.caption-link(href="#") весь каталог
+            .news__btn-block
+                button.arrow-btn.js-btn-next(type="button")
+                    svg(width="7" height="11")
+                        use(xlink:href="#icon-arrow-point")
+                button.arrow-btn.js-btn-prev(type="button")
+                    svg(width="7" height="11")
+                        use(xlink:href="#icon-arrow-point")
+        .news__container.swiper-container
+            .swiper-wrapper
+                .swiper-slide.news__card
+                    .news__img
+                        picture
+                            source(srcset="img/news-man.webp" type="image/webp")
+                            img(src="img/news-man.png", alt="Человек с рыбой")
+                    time.news__data(datetime="2014-02-13") 13.02.2019
+                    p.news__card-caption Презентация нового продукта
+                    p.news__card-text 
+                        |Сайт рыбатекст поможет дизайнеру, верстальщику, 
+                        |вебмастеру сгенерировать несколько абзацев более 
+                        |менее осмысленного текста рыбы на русском языке, 
+                        |а начинающему оратору отточить навык публичных...
+                    a.news__card-link(href="#") подробнее
+                .swiper-slide.news__card
+                    .news__img
+                        picture
+                            source(srcset="img/news-boat.webp" type="image/webp")
+                            img(src="img/news-boat.png", alt="Человек с лодкой")
+                    time.news__data(datetime="2014-02-13") 13.02.2019
+                    p.news__card-caption Презентация нового продукта
+                    p.news__card-text 
+                        |Сайт рыбатекст поможет дизайнеру, верстальщику, 
+                        |вебмастеру сгенерировать несколько абзацев более 
+                        |менее осмысленного текста рыбы на русском языке, 
+                        |а начинающему оратору отточить навык публичных...
+                    a.news__card-link(href="#") подробнее
+                .swiper-slide.news__card
+                    .news__img
+                        picture
+                            source(srcset="img/news-man-two.webp" type="image/webp")
+                            img(src="img/news-man-two.png", alt="Человек с рыбой и человеком")
+                    time.news__data(datetime="2014-02-13") 13.02.2019
+                    p.news__card-caption Презентация нового продукта
+                    p.news__card-text 
+                        |Сайт рыбатекст поможет дизайнеру, верстальщику, 
+                        |вебмастеру сгенерировать несколько абзацев более 
+                        |менее осмысленного текста рыбы на русском языке, 
+                        |а начинающему оратору отточить навык публичных...
+                    a.news__card-link(href="#") подробнее
+        form(action="#" method="POST")
+            label.news__form-caption(for="mail") Подпишитесь на рассылку и будьте в курсе новостей, акций, новинок
+            .news__form-row
+                input.news__form-input(type="email" placeholder="Ваш email" name="mail" id="mail")
+                button.news__form-btn.gradient-block(type="submit") подписаться

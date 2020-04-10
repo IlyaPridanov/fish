@@ -11,10 +11,13 @@
       var pagination = slider.querySelector('.swiper-pagination');
       var slidesPerView = 1;
       var slidesPerView600 = 1;
-      var spaceBetween = 0;
+      var spaceBetween = 30;
       if (slider.classList.contains('hit-new')) {
         slidesPerView = 4;
-        slidesPerView600 = 2;
+        spaceBetween = 30;
+      }
+      if (slider.classList.contains('news')) {
+        slidesPerView = 3;
         spaceBetween = 30;
       }
       return new window.Swiper(container, {

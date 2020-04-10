@@ -3,7 +3,7 @@
         h1.visually-hidden Рыбалка
         .main__row
             include catalog-list.pug
-            .main__column
+            .main__column.js-active
                 .main__slider.slider
                     .swiper-container
                         .swiper-wrapper
@@ -12,25 +12,28 @@
                                 p.main__slider-text катушка Adrenalin 7300 BC
                                 strong.main__slider-cash 5 600 р.
                                 a.main__slider-link(href="#") Купить
-                                picture
-                                    source(srcset="img/main-coil.webp" type="image/webp")
-                                    img(src="img/main-coil.png", alt="Фото катушка")
+                                .main__img
+                                    picture
+                                        source(srcset="img/main-coil.webp" type="image/webp")
+                                        img(src="img/main-coil.png", alt="Фото катушка")
                             .main__slider-item.swiper-slide
                                 p.main__slider-caption Специальные предложения
                                 p.main__slider-text катушка Adrenalin 7300 BC
                                 strong.main__slider-cash 5 600 р.
                                 a.main__slider-link(href="#") Купить
-                                picture
-                                    source(srcset="img/main-coil.webp" type="image/webp")
-                                    img(src="img/main-coil.png", alt="Фото катушка")
+                                .main__img
+                                    picture
+                                        source(srcset="img/main-coil.webp" type="image/webp")
+                                        img(src="img/main-coil.png", alt="Фото катушка")
                             .main__slider-item.swiper-slide
                                 p.main__slider-caption Специальные предложения
                                 p.main__slider-text катушка Adrenalin 7300 BC
                                 strong.main__slider-cash 5 600 р.
                                 a.main__slider-link(href="#") Купить
-                                picture
-                                    source(srcset="img/main-coil.webp" type="image/webp")
-                                    img(src="img/main-coil.png", alt="Фото катушка")
+                                .main__img
+                                    picture
+                                        source(srcset="img/main-coil.webp" type="image/webp")
+                                        img(src="img/main-coil.png", alt="Фото катушка")
                     .swiper-pagination
                 ul.main__list
                     li.main__item
@@ -45,8 +48,8 @@
                                 img(src="img/main-fish.png", alt="Фото приманки")
                     li.main__item
                         a.main__link(href="#")
-                            p.main__caption новые приманки
-                            p.main__text для подледной ловли
+                            p.main__caption скачайте каталог
+                            p.main__text для оптовиков
                             span.arrow-btn
                                 svg(width="7" height="11")
                                     use(xlink:href="#icon-arrow-point")
@@ -55,8 +58,8 @@
                                 img(src="img/main-book.png", alt="Фото книги")
                     li.main__item
                         a.main__link(href="#")
-                            p.main__caption новые приманки
-                            p.main__text для подледной ловли
+                            p.main__caption эксперты отвечают
+                            p.main__text на ваши вопросы
                             span.arrow-btn
                                 svg(width="7" height="11")
                                     use(xlink:href="#icon-arrow-point")

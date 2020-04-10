@@ -1,0 +1,197 @@
+.news {
+    padding-bottom: 43px;
+    margin-bottom: 58px;
+
+    background-image: $primary-gradient-news;
+}
+
+.news__caption {
+    margin: 0;
+}
+
+.news__caption-row {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news__caption-link {
+    margin: 12px auto 0 33px;
+    letter-spacing: 2.2px;
+}
+
+.news__btn-block {
+    display: flex;
+
+    & button {
+        margin-left: 6px;
+    }
+}
+
+.news__container {
+    margin-top: 58px;
+
+    & .swiper-wrapper {
+        padding-bottom: 20px;
+    }
+}
+
+.news__card {
+    padding-bottom: 21px;
+    min-height: 432px;
+    position: relative;
+
+    background-color: $white;
+
+    box-shadow: $hit-shadow;
+
+    &:focus,
+    &:hover,
+    &:active {
+        box-shadow: $hit-focus-shadow;
+    }
+}
+
+.news__img {
+    margin-bottom: 17px;
+    height: 210px;
+
+    & img {
+        display: block;
+    
+        object-fit: cover;
+    
+        height: 100%;
+        width: 100%;
+        max-width: none;
+    }
+}
+
+.news__data {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98px;
+    height: 37px;
+
+    font-family: $panton;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1;
+    color: $white;
+
+    border-radius: 3px;
+    background-color: $black-light;
+}
+
+.news__card-caption {
+    margin: 0 23px 11px 23px;
+
+    font-family: $panton;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.56;
+    color: $black-light;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.news__card-text {
+    margin: 0 29px 17px 23px;
+
+    font-family: $panton;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.7;
+    color: $black-light;
+    letter-spacing: 0.4px;
+}
+
+.news__card-link {
+    margin: 0 23px;
+
+    font-family: $panton;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 1;
+    color: $primary-color-dark-light;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 2.2px;
+
+    &:focus,
+    &:hover,
+    &:active {
+        cursor: pointer;
+
+        text-decoration: none;
+        opacity: 0.8;
+    }
+}
+
+.news__form-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.news__form-caption {
+    display: block;
+    margin: 28px 0 30px;
+
+    font-family: $panton;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+    color: $black-light;
+    text-align: center;
+}
+
+.news__form-input {
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+
+    font-family: $panton;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1;
+    color: $black-light;
+
+    border-radius: 3px 0 0 3px;
+    border: 1px solid transparent;
+    background-color: $white;
+
+    &::placeholder {
+        font-family: $panton;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1;
+        color: $black-light;
+
+        opacity: 0.5;
+    }
+
+    &:focus,
+    &:hover,
+    &:active {
+        border: 1px solid $primary-color;
+    }
+}
+
+.news__form-btn {
+    @include hover();
+
+    width: 262px;
+    height: 58px;
+
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 2.9px;
+    text-transform: uppercase;
+
+    border-radius: 0 3px 3px 0;
+}

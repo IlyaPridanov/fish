@@ -1,0 +1,82 @@
+.sale {
+    margin-bottom: 93px;
+}
+
+.sale__row {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-gap: 30px;
+}
+
+.sale__card {
+    position: relative;
+    padding: 42px 40px 18px;
+    min-height: 279px;
+
+    background-color: $primary-color-dark;
+    background-image: $primary-gradient-card;
+    border-radius: 3px;
+    box-shadow: $sale-shadow;
+
+    & .arrow-btn {
+        position: absolute;
+        left: 44px;
+        bottom: 41px;
+        width: 37px;
+        height: 37px;
+    }
+
+    & img {
+        position: absolute;
+
+        top: -9px;
+        right: 20px;
+    }
+
+    &:last-child {
+        & img {
+            top: 20px;
+        }
+
+        & .sale__cash {
+            margin-left: 23%;
+        }
+    }
+}
+
+.sale__text {
+    margin: 0;
+    margin-bottom: 22px;
+    width: 355px;
+
+    font-family: $panton;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1.08;
+    color: $white;
+    letter-spacing: 1.1px;
+
+    & span {
+        margin-left: 10px;
+
+        font-family: $panton;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 1.37;
+        color: $primary-color-ultra-middle;
+        vertical-align: middle;
+    }
+}
+
+.sale__cash {
+    margin: 0;
+    margin-left: 20%;
+
+    font-family: $panton;
+    font-weight: 800;
+    font-size: 95px;
+    line-height: 1;
+    color: $white;
+
+    opacity: 0.5;
+}

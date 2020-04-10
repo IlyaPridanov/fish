@@ -1,0 +1,29 @@
+.about {
+    margin-bottom: 85px;
+}
+
+.about__caption {
+    margin: 0;
+    margin-bottom: 46px;
+}
+
+.about__row {
+    column-count: 2;
+    column-gap: 30px;
+
+    & p {
+        margin: 0;
+        margin-bottom: 25px;
+
+        font-family: $panton;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.85;
+        color: $black;
+        letter-spacing: 0.3px;
+    }
+
+    & p:nth-child(3) {
+        margin-bottom: 50px;
+    }
+}
